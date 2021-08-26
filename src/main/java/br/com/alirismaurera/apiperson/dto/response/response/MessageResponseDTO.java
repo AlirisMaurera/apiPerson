@@ -1,4 +1,4 @@
-package br.com.alirismaurera.apiperson.dto.response;
+package br.com.alirismaurera.apiperson.dto.response.response;
 
 import lombok.Builder;
 import lombok.Data;
