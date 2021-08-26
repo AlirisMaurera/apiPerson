@@ -5,13 +5,12 @@ import br.com.alirismaurera.apiperson.dto.response.request.PersonDTO;
 import br.com.alirismaurera.apiperson.entity.Person;
 import br.com.alirismaurera.apiperson.exception.PersonNotFoundException;
 
-import br.com.alirismaurera.apiperson.mapper.PersonMapper;
+import br.com.alirismaurera.apiperson.dto.response.mapper.PersonMapper;
 import br.com.alirismaurera.apiperson.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service

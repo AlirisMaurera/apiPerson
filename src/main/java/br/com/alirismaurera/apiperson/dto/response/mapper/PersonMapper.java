@@ -1,10 +1,11 @@
-package br.com.alirismaurera.apiperson.mapper;
+package br.com.alirismaurera.apiperson.dto.response.mapper;
 
 import br.com.alirismaurera.apiperson.dto.response.request.PersonDTO;
 import br.com.alirismaurera.apiperson.entity.Person;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
+
 
 @Mapper
 public interface PersonMapper {
