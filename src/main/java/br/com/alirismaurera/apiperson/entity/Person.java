@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.br.CPF;
 
 import javax.persistence.*;
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
 @Entity
 @Data
 @Builder
+@Table(uniqueConstraints = {@UniqueConstraint(columnNames = "cpf")})
 @AllArgsConstructor
 @NoArgsConstructor
 public class Person {
@@ -25,6 +27,7 @@ public class Person {
     @Column(nullable = false)
     private String lastname;
 
+    @CPF
     @Column(nullable = false, unique = true)
     private String cpf;
 
